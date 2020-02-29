@@ -1,0 +1,7 @@
+{
+    "name": "glu",
+    "description": "Glu Mobile",
+    "repository": "https://github.com/renatofilipov/glu",
+    "logo": "https://www.php.net/images/logos/new-php-logo.svg",
+    "keywords": ["php", "slim-micro-framework", "restful", "mysql", "api"]
+}
