@@ -117,7 +117,14 @@ class TaskService extends BaseService {
         $task->setProcessorId(null);
         $task->setDateTimeCompleted(null);
         $task->setStatus(BaseService::STATUS_NEW);
-        return $this->getTaskDAO()->createTask($task);
+
+        // create one or multiple tasks, depending on the client call
+        $data->tasks = empty($data->tasks) ? 1 : intval($data->tasks);
+        $lastTask = [];
+        for ($i = 0; $i < $data->tasks; $i++) {
+            $lastTask = $this->getTaskDAO()->createTask($task);
+        }
+        return $lastTask;
     }
 
     /**
