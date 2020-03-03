@@ -1,4 +1,4 @@
-# RENATO FILIPOV - REST API - GLU MOBILE
+# RENATO FILIPOV - REST API
 
 Please reach out at http://renato.filipov.me or renato@filipov.me if you have any questions how to install and use this app =)
 
